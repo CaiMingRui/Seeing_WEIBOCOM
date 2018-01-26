@@ -1,0 +1,10 @@
+//<?xml version="1.0" encoding="UTF-8"?>
+<Weibo_cn>
+<rout>
+<ReadMname></ReadMname>//读取初始电影名字的文件，其格式主要是./(int)i年份/
+<SaveMname></SaveMname>//保存读取到的电影名字，其格式主要是 年份.txt 内为电影名字
+<movie_html_page></movie_html_page>//保存了对应电影微博评论页面的html，对应html_moviename_page
+<save_Name_url></save_Name_url>//保存的是电影评论的用户id和名字，按年份/电影/页码保存
+<save_userpage></save_userpage>//保存了用户的三个页面，main/message/follow.txt
+</rout>
+</Weibo_cn>
