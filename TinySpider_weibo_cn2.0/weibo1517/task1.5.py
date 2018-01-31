@@ -398,34 +398,34 @@ def star():
         get_web(path)
         with open('./CheckDate/getwebdate.txt', 'w') as wri:
             wri.write(file + '\n')
-    # except  Exception, iio:
-    #     print Exception,":",iio
-    #     return iio
+    except  Exception, iio:
+        print Exception,":",iio
+        return iio
 
 
 if __name__ == '__main__':
-    # try:
-    erro = star()
-    #     times = 0
-    #     rangetime = 10
-    #     while ('Connection refused' in erro or 'Timeout' in erro or 'Timeout loading page after 300000ms' in erro):
-    #         browser.quit()
-    #         times = times + 1
-    #         if(times>3):
-    #             rangetime = 30
-    #         if(time>4):
-    #             send_mail.mail(Title='task1-5出现问题',message='mmp,我睡了一个小时，试了4次都失败了，你来搞一下吧')
-    #             sys.exit()
-    #         print "我睡"+str(rangetime)+"分钟"
-    #         for i in range(0, rangetime):
-    #             time.sleep(60)
-    #             print "还有" + str(rangetime - i) + "分钟"
-    #         try:
-    #             erro = star()
-    #         finally:
-    #             print 'again'
-    #             # send_mail.mail(Title='task1-5出现问题', message='未知错误，错误内容为：'+str(erro))
-    # except Exception,erro:
-    #     print Exception,"xiaxiaxia:xiaxiaxia",erro
-    #     send_mail.mail(Title='task1-5出现问题', message='未知错误，错误内容为：' + str(erro))
+    try:
+        erro = star()
+        times = 0
+        rangetime = 10
+        while ('Connection refused' in erro or 'Timeout' in erro or 'Timeout loading page after 300000ms' in erro):
+            browser.quit()
+            times = times + 1
+            if(times>3):
+                rangetime = 30
+            if(time>4):
+                send_mail.mail(Title='task1-5出现问题',message='mmp,我睡了一个小时，试了4次都失败了，你来搞一下吧')
+                sys.exit()
+            print "我睡"+str(rangetime)+"分钟"
+            for i in range(0, rangetime):
+                time.sleep(60)
+                print "还有" + str(rangetime - i) + "分钟"
+            try:
+                erro = star()
+            finally:
+                print 'again'
+                # send_mail.mail(Title='task1-5出现问题', message='未知错误，错误内容为：'+str(erro))
+    except Exception,erro:
+        print Exception,"xiaxiaxia:xiaxiaxia",erro
+        send_mail.mail(Title='task1-5出现问题', message='未知错误，错误内容为：' + str(erro))
 
