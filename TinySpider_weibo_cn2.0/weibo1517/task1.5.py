@@ -386,18 +386,18 @@ def more_C(pathX):
 
 def star():
     login.login(browser)
-    # try:
-    files = os.listdir('./movie_search_url/')
-    for file in files:
-        if os.path.exists('./CheckDate/getwebdate.txt'):
-            with open('./CheckDate/getwebdate.txt', 'r') as rei:
-                sabi = rei.readlines()
-                if file in sabi:
-                    continue
-        path = './movie_search_url/' + file
-        get_web(path)
-        with open('./CheckDate/getwebdate.txt', 'w') as wri:
-            wri.write(file + '\n')
+    try:
+        files = os.listdir('./movie_search_url/')
+        for file in files:
+            if os.path.exists('./CheckDate/getwebdate.txt'):
+                with open('./CheckDate/getwebdate.txt', 'r') as rei:
+                    sabi = rei.readlines()
+                    if file in sabi:
+                        continue
+            path = './movie_search_url/' + file
+            get_web(path)
+            with open('./CheckDate/getwebdate.txt', 'w') as wri:
+                wri.write(file + '\n')
     except  Exception, iio:
         print Exception,":",iio
         return iio
