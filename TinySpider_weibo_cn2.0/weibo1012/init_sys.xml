@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Weibo_cn>
+<rout>
+<ReadMname>"./movie_time_name/"</ReadMname>
+<SaveMurl>"./movie_search_url/"</SaveMurl>
+<Userurl>"./user_url/"</Userurl>
+<Vurl>"./Vurl/"</Vurl>
+<movie_html_page></movie_html_page>
+<save_Name_url></save_Name_url>
+<save_userpage></save_userpage>
+</rout>
+</Weibo_cn>

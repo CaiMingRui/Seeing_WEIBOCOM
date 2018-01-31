@@ -1,0 +1,34 @@
+#this is a help for install firefox thought your marchin has already install a firefox(not 57.3or57.4..if yes,you can ignore this help)
+
+　　1、首先解压这个文件包：
+
+　　tar -jxvf firefox-16.0a1.en-US.linux-x86_64.tar.bz2
+
+　　2、将解压好的目录移动到/usr/lib文件夹下：
+
+　　sudo mv firefox /usr/lib/firefox_night
+
+　　3、进入目录/usr/bin：cd /usr/bin
+
+　　先删除已有的链接 sudo rm -rf firefox
+
+　　4、建立一个链接：
+
+　　sudo ln -s /usr/lib/firefox_night/firefox firefox
+
+　　如果当前有firefox启动则关闭启动，否则直接启动，切换为nightly版本。
+
+
+
+than how to make a desktop???
+启动器文件一般保存在/usr/share/applications 文件夹中，以desktop结尾，下面是一个创建eclipse的样例： 
+首先在/usr/share/applications中创建一个文件eclipse.desktop文件，然后编辑该文件,Exec的路径为该软件的可执行文件的绝对路径，Icon为该软件启动器的图标,一般只需要修改这两个即可创建一个简单的启动器了。。。。
+
+[Desktop Entry]
+Version=1.0
+Name=eclipse  #这个是名字
+Exec=/home/jason/Downloads/eclipse/eclipse   #这个是你的启动的那个文件
+Termina=false
+Icon=/home/jason/Downloads/eclipse/eclipse   #这个是你的那个图标，可以自己找
+Type=Application
+Categories=Development
